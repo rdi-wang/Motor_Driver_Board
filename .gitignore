@@ -1,0 +1,5 @@
+*.lck
+*.kicad_prl
+**/Motor_Driver_Board-backups/
+/Motor_Driver_Board/#auto_saved_files#
+*.kicad_pro
