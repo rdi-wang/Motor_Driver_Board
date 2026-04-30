@@ -39,7 +39,7 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
+          "drill": 0.8,
           "height": 1.6,
           "width": 1.6
         },
@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -278,6 +278,14 @@
     "erc_exclusions": [
       [
         "pin_not_driven|2120900|698500|17cdab2b-67ac-45aa-88a2-6b84fd8a758b|00000000-0000-0000-0000-000000000000|/c70df163-fa29-4f73-9cea-7339cbbc421d|/c70df163-fa29-4f73-9cea-7339cbbc421d|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1546860|685800|b9315bc9-ede2-477b-a30f-bce429251a6a|00000000-0000-0000-0000-000000000000|/c70df163-fa29-4f73-9cea-7339cbbc421d|/c70df163-fa29-4f73-9cea-7339cbbc421d|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1587500|685800|b9315bc9-ede2-477b-a30f-bce429251a6a|00000000-0000-0000-0000-000000000000|/c70df163-fa29-4f73-9cea-7339cbbc421d|/c70df163-fa29-4f73-9cea-7339cbbc421d|",
         ""
       ]
     ],
@@ -538,6 +546,7 @@
         "pcb_color": "rgb(0, 132, 0)",
         "priority": 1,
         "schematic_color": "rgb(0, 132, 0)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -545,6 +554,7 @@
         "pcb_color": "rgb(0, 194, 194)",
         "priority": 2,
         "schematic_color": "rgb(0, 194, 194)",
+        "track_width": 0.3,
         "tuning_profile": ""
       },
       {
@@ -552,6 +562,7 @@
         "pcb_color": "rgb(221, 133, 0)",
         "priority": 0,
         "schematic_color": "rgb(221, 133, 0)",
+        "track_width": 0.6,
         "tuning_profile": ""
       },
       {
@@ -775,7 +786,7 @@
         "uuid": "c70df163-fa29-4f73-9cea-7339cbbc421d"
       }
     ],
-    "used_designators": "SW1,#FLG1-3,R1-11,J1-6,C1-9,L1,D1-2,#PWR1-27,U1,A1-2,VR1,H1-4",
+    "used_designators": "J1-3,R1-11,#FLG1-2,L1,D1,#PWR1-27,A1-2,C1-9,H1-4,SW1,U1-3",
     "variants": []
   },
   "sheets": [

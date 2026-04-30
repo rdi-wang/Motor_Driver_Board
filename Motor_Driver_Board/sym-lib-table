@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "RP2040_Zero") (type "KiCad") (uri "C:/Users/ryand/OneDrive/Documents/KiCad/10.0/custom/schematics/RP2040_Zero.kicad_sym") (options "") (descr ""))
+	(lib (name "RP2040-ZERO") (type "KiCad") (uri "C:/Users/ryand/OneDrive/Documents/KiCad/10.0/custom/RP2040Zero/RP2040-ZERO.kicad_sym") (options "") (descr ""))
+)
