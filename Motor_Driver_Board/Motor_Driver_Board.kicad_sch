@@ -5348,6 +5348,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 91.44 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 91.44 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "Motor_Driver_Board"
 				(path "/c70df163-fa29-4f73-9cea-7339cbbc421d"
@@ -5413,6 +5435,28 @@
 		)
 		(property "Description" "Resistor"
 			(at 59.69 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 59.69 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 59.69 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5657,6 +5701,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C475920"
+			(at 86.36 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "FXL1040-680-M"
+			(at 86.36 44.45 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "065626f9-cb99-4567-9c2b-3b21efb1fd98")
 		)
@@ -5728,6 +5794,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 105.41 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C57112"
+			(at 105.41 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603B103K500NT"
 			(at 105.41 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -5819,6 +5907,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C57112"
+			(at 40.64 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603B103K500NT"
+			(at 40.64 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "42ecdb87-3fc4-4201-a49e-4cbcbf61f0c7")
 		)
@@ -5890,6 +6000,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 72.39 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 72.39 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
 			(at 72.39 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -5982,6 +6114,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 91.44 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 91.44 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "Motor_Driver_Board"
 				(path "/c70df163-fa29-4f73-9cea-7339cbbc421d"
@@ -5997,9 +6151,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "29af0e17-9612-4b45-9025-93fc41accd9a")
@@ -6047,6 +6201,28 @@
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
 			(at 82.55 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C202365"
+			(at 82.55 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "EC11E18244AU"
+			(at 82.55 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6167,9 +6343,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2d3beb61-f726-449d-ac38-63203490b886")
 		(property "Reference" "A1"
@@ -6218,6 +6394,28 @@
 			)
 		)
 		(property "Description" "Pololu Breakout Board, Stepper Driver A4988"
+			(at 223.52 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 223.52 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 223.52 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -6352,6 +6550,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C25804"
+			(at 46.99 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 46.99 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "114d8b24-ecd4-4e40-a20e-4e1a6708ef4c")
 		)
@@ -6374,9 +6594,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "3bd09e7f-975b-4e91-9612-e45c6446b496")
 		(property "Reference" "C2"
@@ -6424,6 +6644,28 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 31.75 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C46550435"
+			(at 31.75 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PA35V100M6x8"
 			(at 31.75 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -6749,6 +6991,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C25804"
+			(at 92.71 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 92.71 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "83f754c4-7175-4f84-83d1-4e8df39fd1f3")
 		)
@@ -6821,6 +7085,28 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 105.41 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 105.41 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 105.41 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -7080,9 +7366,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "6b2a7fb0-9e91-4468-a45f-5c25a3c86f0b")
 		(property "Reference" "J2"
@@ -7130,6 +7416,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 256.54 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C2691448"
+			(at 256.54 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PZ254V-11-04P"
 			(at 256.54 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7245,9 +7553,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77f5c816-44b8-4955-8f63-87bb04b4ca95")
@@ -7296,6 +7604,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 266.7 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C492401"
+			(at 266.7 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PZ254V-11-02P"
 			(at 266.7 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -7388,6 +7718,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 105.41 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 105.41 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "Motor_Driver_Board"
 				(path "/c70df163-fa29-4f73-9cea-7339cbbc421d"
@@ -7455,6 +7807,28 @@
 		)
 		(property "Description" "40V 3A Schottky Diode, SMA"
 			(at 76.2 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C8678"
+			(at 76.2 55.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SS34"
+			(at 76.2 55.88 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7545,6 +7919,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C96123"
+			(at 96.52 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL31A476MPHNNNE"
+			(at 96.52 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "964facd6-e9b9-475f-811b-045bb7d5a6eb")
 		)
@@ -7616,6 +8012,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 46.99 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C57112"
+			(at 46.99 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603B103K500NT"
 			(at 46.99 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7864,6 +8282,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C25804"
+			(at 201.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 201.93 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f6854878-8248-429a-8403-89f484965136")
 		)
@@ -8022,6 +8462,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C25804"
+			(at 99.06 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 99.06 107.95 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "15ec5872-08a5-4b5f-803c-1759d6f1b0f6")
 		)
@@ -8104,6 +8566,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C25804"
+			(at 53.34 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 53.34 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9a942c74-b341-4ca1-a914-d773970b1c6e")
 		)
@@ -8174,6 +8658,28 @@
 			)
 		)
 		(property "Description" "Buck DC/DC Converter, 2A, 5V Output Voltage, 7-40V Input Voltage"
+			(at 63.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C61063"
+			(at 63.5 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "XL1509-5.0E1"
 			(at 63.5 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8273,6 +8779,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 109.22 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C96123"
+			(at 109.22 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL31A476MPHNNNE"
 			(at 109.22 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -8433,6 +8961,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 66.04 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 66.04 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
 			(at 66.04 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -8622,9 +9172,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "9d72cf32-6675-4415-ba44-dbf0d601c29a")
 		(property "Reference" "J3"
@@ -8672,6 +9222,28 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 31.75 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C2691448"
+			(at 31.75 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PZ254V-11-04P"
 			(at 31.75 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -8768,6 +9340,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C25804"
+			(at 53.34 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
+			(at 53.34 113.03 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3e380bdb-e7e4-43f6-9a18-42e83caa2251")
 		)
@@ -8789,9 +9383,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b43d3700-80c7-4a71-8325-4128dcbbb00e")
@@ -8839,6 +9433,28 @@
 			)
 		)
 		(property "Description" ""
+			(at 157.48 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C5350143"
+			(at 157.48 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "     RP2040-Zero"
 			(at 157.48 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8983,6 +9599,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 207.01 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 207.01 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
 			(at 207.01 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -9152,6 +9790,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C96123"
+			(at 102.87 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL31A476MPHNNNE"
+			(at 102.87 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "f5b3c85d-5877-4348-8a4e-0f9c52707f12")
 		)
@@ -9173,9 +9833,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bea61f65-fde4-4f8f-890c-28e1aff0eaec")
@@ -9224,6 +9884,28 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
+			(at 242.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C46550435"
+			(at 242.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PA35V100M6x8"
 			(at 242.57 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -9698,6 +10380,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 41.91 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C13585"
+			(at 41.91 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL31A106KBHNNNE"
 			(at 41.91 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -10249,6 +10953,28 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 212.09 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C25804"
+			(at 212.09 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1002T5E"
 			(at 212.09 124.46 0)
 			(hide yes)
 			(show_name no)
