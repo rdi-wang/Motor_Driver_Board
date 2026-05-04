@@ -6621,7 +6621,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 30.7848 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -9454,7 +9454,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "     RP2040-Zero"
+		(property "Manufacturer Part" "RP2040-Zero"
 			(at 157.48 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -9861,7 +9861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 243.5352 49.53 0)
 			(hide yes)
 			(show_name no)
