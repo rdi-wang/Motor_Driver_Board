@@ -3576,12 +3576,6 @@
 		(uuid "5015e5f5-9c11-41d3-813c-f521a6992f4d")
 	)
 	(junction
-		(at 50.8 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66ed868b-3f2f-4f5a-b7b3-060826fb0ab1")
-	)
-	(junction
 		(at 105.41 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3604,6 +3598,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7365bf1b-fe0b-4267-b38a-b3ef81ca08ce")
+	)
+	(junction
+		(at 50.8 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76176620-1c98-4153-b78d-e8881d07ff8a")
 	)
 	(junction
 		(at 96.52 62.23)
@@ -3982,6 +3982,16 @@
 			(type default)
 		)
 		(uuid "2355bdd8-fbde-462e-b562-c6dcb50d719f")
+	)
+	(wire
+		(pts
+			(xy 50.8 49.53) (xy 50.8 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "248d6b9f-b206-4abd-b9d9-eea5b7751c98")
 	)
 	(wire
 		(pts
@@ -4375,7 +4385,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 44.45) (xy 50.8 44.45)
+			(xy 41.91 44.45) (xy 53.34 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4525,7 +4535,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 62.23) (xy 63.5 62.23)
+			(xy 41.91 62.23) (xy 50.8 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4552,16 +4562,6 @@
 			(type default)
 		)
 		(uuid "94d41652-5368-4108-af4f-60242de9bce2")
-	)
-	(wire
-		(pts
-			(xy 50.8 44.45) (xy 50.8 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "950cecf7-c612-4cc8-958f-1d45dbb90ec3")
 	)
 	(wire
 		(pts
@@ -4662,16 +4662,6 @@
 			(type default)
 		)
 		(uuid "abb76f18-6367-49b0-aec4-6642e4edbfe9")
-	)
-	(wire
-		(pts
-			(xy 50.8 44.45) (xy 53.34 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ade27af9-4ef0-45b5-b74f-662194876010")
 	)
 	(wire
 		(pts
@@ -4882,6 +4872,16 @@
 			(type default)
 		)
 		(uuid "dcfbe02b-d278-4e49-a87c-7529a67443ad")
+	)
+	(wire
+		(pts
+			(xy 50.8 62.23) (xy 63.5 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd5ff0eb-16dc-4933-b046-f3a9b4ef29cb")
 	)
 	(wire
 		(pts
@@ -6528,7 +6528,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "2.2K"
 			(at 45.974 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8772,7 +8772,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "2.2K"
 			(at 52.324 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
