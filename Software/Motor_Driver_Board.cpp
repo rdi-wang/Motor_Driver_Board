@@ -1,5 +1,6 @@
 #include <string>
 #include <cstring>
+#include <math.h>
 
 #include "pico/stdlib.h"
 #include "hardware/i2c.h"
@@ -255,7 +256,7 @@ static void WriteString(uint8_t *buf, int16_t x, int16_t y, const char *str) {
     }
 }
 
-//Stepper driver pin definitions
+// Stepper driver pin definitions
 #define STP_PIN 14
 #define DIR_PIN 15
 #define MS1_PIN 11
@@ -264,6 +265,7 @@ static void WriteString(uint8_t *buf, int16_t x, int16_t y, const char *str) {
 
 // Steps per rotation for the NEMA17
 #define STEPS_PER_REV 200.0f
+#define MAX_RPM       600.0f
 
 typedef enum {
     MICROSTEP_FULL      = 1,
@@ -273,9 +275,38 @@ typedef enum {
     MICROSTEP_SIXTEENTH = 16
 } microstep_mode_t;
 
-static uint32_t step_delay_us = 1000;
+static uint32_t step_delay_us = 0;
 static microstep_mode_t current_microstep = MICROSTEP_FULL;
-static float current_speed = 60.0f;
+
+static float current_speed_rpm = 0.0f;
+static float target_speed_rpm  = 0.0f;
+
+static float accel_rpm_per_s = 120.0f;
+
+static absolute_time_t last_ramp_update;
+
+static uint32_t rpm_to_step_delay_us(float rpm, microstep_mode_t microstep) {
+    if (rpm <= 0.0f) {
+        return 0;
+    }
+
+    if (rpm > MAX_RPM) {
+        rpm = MAX_RPM;
+    }
+
+    float steps_per_rev = STEPS_PER_REV * (float)microstep;
+    float steps_per_sec = (rpm * steps_per_rev) / 60.0f;
+
+    if (steps_per_sec < 1.0f) {
+        steps_per_sec = 1.0f;
+    }
+
+    return (uint32_t)(1000000.0f / steps_per_sec);
+}
+
+static void stepper_apply_speed(void) {
+    step_delay_us = rpm_to_step_delay_us(current_speed_rpm, current_microstep);
+}
 
 static void stepper_set_microstep(microstep_mode_t mode) {
     current_microstep = mode;
@@ -311,6 +342,9 @@ static void stepper_set_microstep(microstep_mode_t mode) {
             gpio_put(MS3_PIN, 1);
             break;
     }
+
+    /* Same shaft RPM, new pulse/rev => recompute delay */
+    stepper_apply_speed();
 }
 
 static void stepper_init(void) {
@@ -331,7 +365,12 @@ static void stepper_init(void) {
     gpio_init(MS3_PIN);
     gpio_set_dir(MS3_PIN, GPIO_OUT);
 
+    current_speed_rpm   = 0.0f;
+    target_speed_rpm    = 0.0f;
+    step_delay_us       = 0;
+
     stepper_set_microstep(MICROSTEP_FULL);
+    last_ramp_update = get_absolute_time();
 }
 
 static void stepper_set_direction(bool clockwise) {
@@ -339,31 +378,54 @@ static void stepper_set_direction(bool clockwise) {
 }
 
 static void stepper_set_speed_rpm(float rpm) {
-    current_speed = rpm;
+    if (rpm < 0.0f) {
+        rpm = 0.0f;
+    }
 
-    if (rpm <= 0.0f) {
-        step_delay_us = 0;
-        current_speed = 0;
+    if (rpm > MAX_RPM) {
+        rpm = MAX_RPM;
+    }
+
+    target_speed_rpm = rpm;
+}
+
+static void stepper_set_acceleration_rpm(float rpm_per_s) {
+    if (rpm_per_s < 1.0f) {
+        rpm_per_s = 1.0f;
+    }
+
+    accel_rpm_per_s = rpm_per_s;
+}
+
+static void stepper_update_speed_ramp(void) {
+    absolute_time_t now = get_absolute_time();
+    int64_t dt_us = absolute_time_diff_us(last_ramp_update, now);
+    last_ramp_update = now;
+
+    if (dt_us <= 0) {
         return;
     }
 
-    if (rpm >= 600.0f) {
-        rpm = 600.0f;
-        current_speed = 600.0f;
+    float dt_s = (float)dt_us / 1000000.0f;
+    float max_delta_rpm = accel_rpm_per_s * dt_s;
+    float error = target_speed_rpm - current_speed_rpm;
+
+    if (fabsf(error) <= max_delta_rpm) {
+        current_speed_rpm = target_speed_rpm;
+    } else if (error > 0.0f) {
+        current_speed_rpm += max_delta_rpm;
+    } else {
+        current_speed_rpm -= max_delta_rpm;
     }
 
-    float steps_per_rev = STEPS_PER_REV * (float)current_microstep;
-    float steps_per_sec = (rpm * steps_per_rev) / 60.0f;
-
-    if (steps_per_sec < 1.0f) {
-        steps_per_sec = 1.0f;
-    }
-
-    step_delay_us = (uint32_t)(1000000.0f / steps_per_sec);
+    stepper_apply_speed();
 }
 
 static void stepper_run(void) {
+    stepper_update_speed_ramp();
+
     if (step_delay_us == 0) {
+        sleep_us(1000);
         return;
     }
 
@@ -408,7 +470,7 @@ void update_display() {
             break;
     }
 
-    std::string text[] = { "STEPPER DRIVER", "Mode: " + step_mode, "Speed: " + std::to_string((int)current_speed) };
+    std::string text[] = { "STEPPER DRIVER", "Mode: " + step_mode, "Speed: " + std::to_string((int)target_speed_rpm) };
 
     memset(buffer, 0, SSD1306_BUF_LEN);
     render(buffer, &frame_area);
@@ -427,7 +489,7 @@ void gpio_callback(uint gpio, uint32_t events) {
     // Check for clockwise operartion
     if (gpio == ENC_CW) {
         if (!gpio_get(ENC_CC)){
-            stepper_set_speed_rpm(current_speed + 10.0f);
+            stepper_set_speed_rpm(target_speed_rpm - 10.0f);
 
             update_display();
         }
@@ -438,7 +500,7 @@ void gpio_callback(uint gpio, uint32_t events) {
     // Check for counterclockwise operartion
     if (gpio == ENC_CC) {
         if (!gpio_get(ENC_CW)){
-            stepper_set_speed_rpm(current_speed - 10.0f);
+            stepper_set_speed_rpm(target_speed_rpm + 10.0f);
 
             update_display();
         }
@@ -468,6 +530,8 @@ void gpio_callback(uint gpio, uint32_t events) {
                 stepper_set_microstep(MICROSTEP_FULL);
                 break;
         }
+
+        stepper_set_speed_rpm(target_speed_rpm);
 
         update_display();
 
@@ -500,7 +564,7 @@ int main() {
     stepper_init();
 
     stepper_set_direction(true);
-    stepper_set_microstep(MICROSTEP_FULL);
+    stepper_set_microstep(MICROSTEP_HALF);
     stepper_set_speed_rpm(60.0f);
 
     update_display();
